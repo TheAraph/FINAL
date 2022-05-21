@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:text="Name of Menu"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_date">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/menu_date"
+            android:text="Party Date"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/menu_price">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/menu_price"
+            android:text="Party Price"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/menu_description">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/menu_description"
+            android:text="Party Description"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
