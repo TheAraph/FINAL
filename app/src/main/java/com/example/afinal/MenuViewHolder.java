@@ -1,15 +1,11 @@
 package com.example.afinal;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.afinal.Intro.LoginSuccess;
 
 public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     public TextView txtMenuName;
@@ -30,7 +26,7 @@ public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnCl
 
     }
 
-    private void setItemClickListener(ItemClickListener itemClickListener){
+    private void setItemClickListener(ItemClickListener itemClickListener) {
         this.itemClickListener = itemClickListener;
     }
 
@@ -38,6 +34,7 @@ public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     public void onClick(View view) {
         itemClickListener.onClick(view, getBindingAdapterPosition(), false);
         view.getContext().startActivity(new
-                Intent(view.getContext(),FoodDetail.class));
+                Intent(view.getContext(), FoodDetail.class));
     }
 }
+

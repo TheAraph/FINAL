@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Intro.LoginSuccess">
+    tools:context=".LoginSuccess">
 
 
     <LinearLayout
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="1: Choose Your Tickets"
+            android:text="Keep Track Of Your Events!"
             android:textSize="30dp"
             android:layout_margin="10dp"
             android:textColor="@color/colorPrimary">
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="2: Add To Cart"
+            android:text="Suggest Events Too!"
             android:textSize="30dp"
             android:layout_margin="10dp"
             android:textColor="@color/colorPrimary">
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="3: Purchase Tickets"
+            android:text=""
             android:textSize="30dp"
             android:layout_margin="10dp"
             android:textColor="@color/colorPrimary">
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="4: Access Tickets From Wallet"
+            android:text=""
             android:textSize="30dp"
             android:layout_margin="10dp"
             android:textColor="@color/colorPrimary">

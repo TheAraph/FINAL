@@ -21,19 +21,19 @@
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.FINAL.NoActionBar" />
         <activity
-            android:name=".Intro.ForgotPassword"
+            android:name=".ForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".Intro.LoginSuccess"
+            android:name=".LoginSuccess"
             android:exported="false" />
         <activity
             android:name=".User"
             android:exported="false" />
         <activity
-            android:name=".Intro.SignUp"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".Intro.SignIn"
+            android:name=".SignIn"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

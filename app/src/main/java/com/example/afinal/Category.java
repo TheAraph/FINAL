@@ -6,6 +6,7 @@ public class Category {
     private String Date;
     private String Price;
     private String Description;
+    private String CategoryId;
 
     public String getName(){
         return Name;
@@ -21,6 +22,10 @@ public class Category {
 
     public String getDescription() {
         return Description;
+    }
+
+    public String getCategoryId() {
+        return CategoryId;
     }
 }
 

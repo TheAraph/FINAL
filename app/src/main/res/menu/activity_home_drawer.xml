@@ -10,13 +10,8 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_baseline_shopping_cart_24"
-            android:title="Cart" />
-
-        <item
-            android:id="@+id/nav_orders"
-            android:icon="@drawable/ic_baseline_shopping_cart_24"
-            android:title="Orders" />
+            android:icon="@drawable/ic_baseline_add_24"
+            android:title="Submit An Event" />
 
         <item
             android:id="@+id/nav_slideshow"

@@ -65,15 +65,6 @@ public class HomeActivity extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
 
-        //btnLogOut = (Button) findViewById(R.id.btnLogOut);
-        //btnLogOut.setOnClickListener(new View.OnClickListener() {
-           //@Override
-            //public void onClick(View view) {
-              //FirebaseAuth.getInstance().signOut();
-              //startActivity(new Intent(HomeActivity.this, MainActivity.class));
-            //}
-        //});
-
         //user = FirebaseAuth.getInstance().getCurrentUser();
         //reference = FirebaseDatabase.getInstance().getReference("Users");
         //userID = user.getUid();

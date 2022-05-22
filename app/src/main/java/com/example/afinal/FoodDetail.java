@@ -21,7 +21,7 @@ public class FoodDetail extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     FloatingActionButton btncart;
 
-    String categoryId = "";
+    String CategoryId = "";
 
     FirebaseDatabase database;
     DatabaseReference category;
@@ -49,11 +49,11 @@ public class FoodDetail extends AppCompatActivity {
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing);
 
         if (getIntent() != null)
-            categoryId = getIntent().getStringExtra("CategoryId");
+            CategoryId = getIntent().getStringExtra("CategoryId");
     }
 
-    private void getDetailCategory(String categoryId) {
-        category.child(categoryId).addValueEventListener(new ValueEventListener() {
+    private void getDetailCategory(String CategoryId) {
+        category.child(CategoryId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Category category = snapshot.getValue(Category.class);
