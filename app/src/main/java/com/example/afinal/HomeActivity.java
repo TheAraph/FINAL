@@ -65,35 +65,6 @@ public class HomeActivity extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
 
-        //user = FirebaseAuth.getInstance().getCurrentUser();
-        //reference = FirebaseDatabase.getInstance().getReference("Users");
-        //userID = user.getUid();
-
-        //final TextView nameTextView = findViewById(R.id.name);
-        //final TextView emailTextView = findViewById(R.id.email);
-        //final TextView phoneTextView = findViewById(R.id.phone);
-
-        /*reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile = snapshot.getValue(User.class);
-
-                if (userProfile != null) {
-                    String name = userProfile.name;
-                    nameTextView.setText(name);
-                    String email = userProfile.email;
-                    emailTextView.setText(email);
-                    String phone = userProfile.phone;
-                    phoneTextView.setText(phone);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(HomeActivity.this, "Something wrong happened!", Toast.LENGTH_LONG).show();
-            }
-        });*/
-
         database = FirebaseDatabase.getInstance();
         reference = database.getReference("Category");
 
