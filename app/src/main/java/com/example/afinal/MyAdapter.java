@@ -64,8 +64,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 @Override
                 public void onClick(View view) {
                     Context context = view.getContext();
-                    Intent intent = new Intent(context, FoodDetail.class);
-                    context.startActivity(intent);
                 }
             });
         }
