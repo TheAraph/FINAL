@@ -8,62 +8,40 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        >
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/Welcome"
+            android:id="@+id/AppName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Welcome To TicketWallet,"
-            android:textSize="50dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/colorPrimary">
+            android:text="EvenTrack"
+            android:textColor="@color/colorPrimary"
+            android:textSize="70dp"/>
 
-        </TextView>
+        <TextView
+            android:id="@+id/NameSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="All your favourite events in one place"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
             android:textColor="@color/black"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:layout_margin="10dp"
-            >
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/Step1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="Keep Track Of Your Events!"
-            android:textSize="30dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/colorPrimary">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/Step2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="Suggest Events Too!"
-            android:textSize="30dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/colorPrimary">
+            android:textSize="40dp">
 
         </TextView>
 
@@ -71,12 +49,12 @@
             android:id="@+id/Step3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:text=""
-            android:textSize="30dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/colorPrimary">
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp">
 
         </TextView>
 
@@ -84,12 +62,12 @@
             android:id="@+id/Step4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:text=""
-            android:textSize="30dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/colorPrimary">
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp">
 
         </TextView>
 
@@ -98,12 +76,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="60dp"
             android:layout_marginHorizontal="45dp"
+            android:layout_marginTop="60dp"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/rounded_btn"
             android:gravity="center"
-            android:text="Let's Go!"
+            android:text="Take me there!"
             android:textColor="@color/white" />
 
 

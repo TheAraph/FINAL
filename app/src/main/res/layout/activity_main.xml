@@ -21,9 +21,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Ticket Wallet"
+            android:text="EvenTrack"
+
             android:textColor="@color/colorPrimary"
-            android:textSize="100dp"/>
+            android:textSize="80dp"/>
         " />
 
         <TextView
@@ -36,35 +37,33 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
-            android:background="@color/colorPrimary"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="@color/white"
             android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn"
             android:gravity="center"
-            />
+            android:text="Sign Up"
+            android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignIn"
-            android:background="@color/colorPrimary"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign In"
-            android:textColor="@color/white"
             android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn"
             android:gravity="center"
-            />
+            android:text="Sign In"
+            android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>

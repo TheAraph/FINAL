@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Ticket Wallet"
+            android:text="EvenTrack"
             android:textColor="@color/colorPrimary"
             android:textSize="70dp"/>
 
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="The App For All Your Ticket Needs"
+            android:text="All your favourite events in one place"
             android:textColor="@color/colorPrimary"
             android:textSize="20dp"/>
 
@@ -48,6 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="100dp"
+            android:background="@drawable/rounded_edit"
+            android:layout_gravity="center"
             android:ems="60"
             android:hint="Email"
             android:inputType="textEmailAddress"
@@ -59,6 +61,8 @@
             android:id="@+id/editPassword"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:layout_gravity="center"
             android:ems="60"
             android:hint="Password"
             android:inputType="textPassword"
@@ -74,7 +78,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/rounded_btn"
             android:gravity="center"
             android:text="Sign In"
             android:textColor="@color/white" />
@@ -85,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:text="Forgot Password?"
+            android:text="Forgot your password?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -96,7 +100,7 @@
             android:layout_gravity="center"
             android:layout_margin="30dp"
             android:layout_marginStart="80dp"
-            android:text="Register"
+            android:text="Don't have an account? Register here"
             android:textSize="16sp"
             android:textStyle="bold"/>
 

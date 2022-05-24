@@ -19,8 +19,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="Submit An Event"
-        android:textSize="50dp"
+        android:text="Submit an Event"
+
+        android:textSize="44dp"
         android:layout_margin="40dp"
         android:textColor="@color/colorPrimary"
         android:layout_marginBottom="40dp">
@@ -30,49 +31,53 @@
         <EditText
             android:layout_marginHorizontal="30dp"
             android:id="@+id/editEventName"
-            android:hint="Event Name"
+            android:hint="Event name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColorHint="@color/colorPrimary"
             android:textSize="34sp"
             android:inputType="text"
             android:textColor="@color/colorPrimary"
+            android:background="@drawable/rounded_edit"
             android:ems="60"
             android:gravity="center"/>
         <EditText
             android:layout_marginHorizontal="30dp"
             android:id="@+id/editEventDate"
-            android:hint="Event Date"
+            android:hint="Event date"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColorHint="@color/colorPrimary"
             android:textSize="34sp"
             android:inputType="text"
             android:textColor="@color/colorPrimary"
+            android:background="@drawable/rounded_edit"
             android:ems="60"
             android:gravity="center"/>
         <EditText
             android:layout_marginHorizontal="30dp"
             android:id="@+id/editEventPrice"
-            android:hint="Event Price"
+            android:hint="Event price"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColorHint="@color/colorPrimary"
             android:textSize="34sp"
             android:inputType="phone"
             android:textColor="@color/colorPrimary"
+            android:background="@drawable/rounded_edit"
             android:ems="60"
             android:gravity="center"/>
         <EditText
             android:layout_marginHorizontal="30dp"
             android:id="@+id/editEventDescription"
-            android:hint="Event Description"
+            android:hint="Event description"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColorHint="@color/colorPrimary"
             android:textSize="34sp"
             android:inputType="text"
             android:textColor="@color/colorPrimary"
+            android:background="@drawable/rounded_edit"
             android:ems="60"
             android:gravity="center"/>
 
@@ -82,6 +87,7 @@
             android:layout_marginTop="70dp"
             android:text="Submit"
             android:id="@+id/SubmitEvent"
+            android:background="@drawable/rounded_btn"
             >
 
         </Button>
