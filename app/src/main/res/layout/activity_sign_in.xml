@@ -47,28 +47,29 @@
             android:id="@+id/editEmail"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="100dp"
+            android:textColorHint="@color/colorPrimary"
             android:background="@drawable/rounded_edit"
-            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="20sp"
             android:ems="60"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/colorPrimary"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="34sp" />
+            android:textColor="@color/colorPrimary"/>
 
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:textColorHint="@color/colorPrimary"
             android:background="@drawable/rounded_edit"
-            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="20sp"
             android:ems="60"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColor="@color/colorPrimary"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="34sp" />
+            android:textColor="@color/colorPrimary" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignIn"
@@ -76,7 +77,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="8dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_btn"
             android:gravity="center"
