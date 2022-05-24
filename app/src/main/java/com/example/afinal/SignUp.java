@@ -32,8 +32,11 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        //Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
 
+
+        //Variables
         AlrReg = (TextView) findViewById(R.id.AlrReg);
         AlrReg.setOnClickListener(this);
 
@@ -47,6 +50,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 
     }
 
+    //Onclick Switch Case for Sign Up Button and Already Registered Text
     @Override
     public void onClick(View view) {
         switch(view.getId()){
@@ -59,12 +63,14 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         }
     }
 
+    //Get EditText Variables
     private void btnSignUp() {
         String phone = editPhone.getText().toString().trim();
         String name = editName.getText().toString().trim();
         String pass = editPassword.getText().toString().trim();
         String email = editEmail.getText().toString().trim();
 
+        //Output Errors
         if(name.isEmpty()){
             editName.setError("Name is required!");
             editName.requestFocus();
@@ -101,13 +107,14 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
             return;
         }
 
+        //Firebase Authentication function to create user
         mAuth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             User user = new User(name,phone,email);
-
+                            //Add user in realtime database
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {

@@ -57,6 +57,7 @@ public class SlideshowFragment extends Fragment{
         final TextView emailTextView = (TextView) myView.findViewById(R.id.email);
         final TextView phoneTextView = (TextView) myView.findViewById(R.id.Phone);
 
+        //Uses reference to Firebase Realtime Database User variable to output the current User details
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -80,6 +81,7 @@ public class SlideshowFragment extends Fragment{
             }
         });
 
+        //Signs out user by signing out their firebase authentication instance and taking them to mainactivity
         btnLogOut = (Button) myView.findViewById(R.id.btnLogOut);
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override

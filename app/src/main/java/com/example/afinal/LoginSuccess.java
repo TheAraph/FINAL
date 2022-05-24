@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class LoginSuccess extends AppCompatActivity implements View.OnClickListener {
-
+    //Ititialise Firebase User and Database Reference to be able to output information from firebase
     private FirebaseUser user;
     private DatabaseReference reference;
 
@@ -41,7 +41,7 @@ public class LoginSuccess extends AppCompatActivity implements View.OnClickListe
 
         final TextView nameTextView = (TextView) findViewById(R.id.Name);
 
-
+        //Uses reference to "Users" to get name of user to output within this activity under "nameTextView"
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -60,7 +60,7 @@ public class LoginSuccess extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
-
+    //Switch case to on click of button go to HomeActivity
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

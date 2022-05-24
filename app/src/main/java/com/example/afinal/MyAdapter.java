@@ -32,7 +32,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
-
+        //Get position from category list in order to output later
         Category category = list.get(position);
         holder.Name.setText(category.getName());
         holder.Date.setText(category.getDate());
@@ -55,11 +55,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            //Receive input from Id from details on Firebase Realtime Database
             Name = itemView.findViewById(R.id.menu_name);
             Date = itemView.findViewById(R.id.menu_date);
             Description = itemView.findViewById(R.id.menu_description);
             Price = itemView.findViewById(R.id.menu_price);
 
+            //Onclick modifier (If further functions were to be implemented on click of the Cards)
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -32,6 +32,7 @@ public class ForgotPassword extends AppCompatActivity {
         btnReset = (Button) findViewById(R.id.btnReset);
         Back = (Button) findViewById(R.id.Back);
 
+        //Firebase Authentication
         auth = FirebaseAuth.getInstance();
 
         btnReset.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,7 @@ public class ForgotPassword extends AppCompatActivity {
             }
         });
 
+        //Takes user back to SignIn page
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,9 +51,11 @@ public class ForgotPassword extends AppCompatActivity {
         });
     }
 
+    //Reset Password function
     private void resetPassword(){
         String email = editEmail.getText().toString().trim();
 
+        //Error prevention
         if(email.isEmpty()){
             editEmail.setError("Email is required!");
             editEmail.requestFocus();
@@ -64,6 +68,7 @@ public class ForgotPassword extends AppCompatActivity {
             return;
         }
 
+        //Firebase Auth sends password reset email
         auth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

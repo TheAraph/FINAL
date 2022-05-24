@@ -33,6 +33,8 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        //Variables
+
         Register = (TextView) findViewById(R.id.Register);
         Register.setOnClickListener(this);
 
@@ -45,9 +47,12 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         forgotPassword = (TextView) findViewById(R.id.ForgotPass);
         forgotPassword.setOnClickListener(this);
 
+
+        //Initialise Firebase Auth
         mAuth = FirebaseAuth.getInstance();
     }
 
+    //Onclick Switch Case for Register, Sign In Button, and Forgot Password
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -64,11 +69,12 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
     }
-
+    //User login function
     private void userLogin() {
         String email = editEmail.getText().toString().trim();
         String password = editPassword.getText().toString().trim();
 
+        //If conditions that output errors
         if(email.isEmpty()){
             editEmail.setError("Email cannot be empty!");
             editEmail.requestFocus();
@@ -93,6 +99,7 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
             return;
         }
 
+        //Use Firebase Authentication to Authenticate Login
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

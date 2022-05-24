@@ -8,6 +8,7 @@ public class Category {
     private String Description;
     private String CategoryId;
 
+    //Getters for Category Information
     public String getName(){
         return Name;
     }

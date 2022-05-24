@@ -40,6 +40,7 @@ public class GalleryFragment extends Fragment {
 
         View myView = inflater.inflate(R.layout.fragment_gallery, container, false);
 
+        //Find data from input
         editEventDate = myView.findViewById(R.id.editEventDate);
         editEventName = myView.findViewById(R.id.editEventName);
         editEventPrice = myView.findViewById(R.id.editEventPrice);
@@ -47,6 +48,7 @@ public class GalleryFragment extends Fragment {
 
         reference = FirebaseDatabase.getInstance().getReference().child("Submissions");
 
+        //Submit event function in button form
         SubmitEvent = (Button) myView.findViewById(R.id.SubmitEvent);
         SubmitEvent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +64,7 @@ public class GalleryFragment extends Fragment {
         return myView;
     }
 
+    //Reads EditText data and pushes it to Firebase Realtime Database variable "Submissions"
     private void insertdata() {
         String eventName = editEventName.getText().toString();
         String eventDate = editEventDate.getText().toString();

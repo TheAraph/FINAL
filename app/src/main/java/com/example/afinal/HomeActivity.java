@@ -111,15 +111,18 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        //RecyclerView to output Category variable and details within it
         recyclerView = (RecyclerView) findViewById(R.id.recycler_menu);
         reference = FirebaseDatabase.getInstance().getReference("Category");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        //Initialise list and implement adapter
         list = new ArrayList<>();
         myAdapter = new MyAdapter(this,list);
         recyclerView.setAdapter(myAdapter);
 
+        //For loops through all of the data in dataSnapshot from Category.class that is linked to the Category realtime database
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

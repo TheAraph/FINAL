@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    //Variables
     Button btnSignIn, btnSignUp;
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Sign In Button on click listener to take you to Sign In Page
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Sign Up Button on click listener to take you to Sign In Page
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
